@@ -684,9 +684,7 @@ Footer
 ===============
 */
 .footer { /*var(--clr-grey-1) for dark theme*/
-  text-align: center;
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
+  padding-bottom: 2rem;
   display: grid;
   place-items: center;
 }
@@ -742,7 +740,41 @@ Footer
   background: var(--clr-primary-6);
 }
 
-/* Light Mode Styling */
+@media screen and (max-width) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+  .hero-info {
+    padding: 2rem 1rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .nav-header {
+    padding: 0.5rem 1rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+  .social-icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .video-banner {
+    padding: 2rem 1rem 6rem;
+  }
+  #toggleMode {
+    right: 10px;
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+}
+
+/* Dark Mode Styling */
 body.dark {
   background: var(--clr-grey-1);
 }
